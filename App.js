@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   calculator: {
     borderRadius: 4,
     backgroundColor: 'rgb(110,143,103)',
-    width: "50%",
+    width: "75%",
     alignSelf: "center",
     alignItems: "center",
     margin: "auto",
@@ -34,12 +34,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#465940',
   },
   about: {
-    flex: 1,
     alignSelf: "center",
     alignItems: 'center',
-    justifyContent: 'center',
     width: "100%",
-    margin: "auto",
+    margin: "2%",
   }
 });
 
