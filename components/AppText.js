@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 
-class AppText extends Component {
-    render() {
-      return (
-        <Text style={styles.text}>
-            {this.props.children}
-        </Text>
-      );
-    }
+const AppText = (props) => {
+  return (
+    <Text style={styles.text}>
+      {props.children}
+      </Text>
+  );
 }
 
 const styles = StyleSheet.create({

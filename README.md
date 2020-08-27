@@ -1,5 +1,3 @@
-<img src="./docs/_imgs/leaf.png" align="right" />
-
 # GREENPRINT MOBILE
 
 ![Planet needs saving](https://img.shields.io/badge/planet-needs%20saving-green)
