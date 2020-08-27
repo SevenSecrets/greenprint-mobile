@@ -5,7 +5,7 @@ const AppText = (props) => {
   return (
     <Text style={styles.text}>
       {props.children}
-      </Text>
+    </Text>
   );
 }
 
