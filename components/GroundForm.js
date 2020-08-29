@@ -4,26 +4,11 @@ import { Formik } from 'formik';
 import AppText from './AppText';
 
 const GroundForm = (props) => {
-    const fetchApiData = (values) => {
-        return fetch("https://project-greenprint-backend.herokuapp.com/", {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json" 
-            },
-            body: JSON.stringify({
-                from: "Camden",
-	            to: "Deptford"
-            })
-        })
-        .then((res) => res.json())
-        .then((json) => console.log(json))
-        .catch((err) => console.log(err))
-    }
 
     return(
         <Formik
             initialValues={{ from: '', to: '' }}
-            onSubmit={async values => {fetchApiData(values)}}
+            onSubmit={async values => {props.fetchApiData(values)}}
         >
             {({handleChange, handleSubmit, values}) => (
                 <View style={styles.container}>

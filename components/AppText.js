@@ -12,7 +12,7 @@ const AppText = (props) => {
 const styles = StyleSheet.create({
     text: {
         textAlign: 'center',
-        width: '60%',
+        maxWidth: '90%',
         margin: '1%',
         fontFamily: 'Roboto',
         color: 'rgb(242,242,242)'
