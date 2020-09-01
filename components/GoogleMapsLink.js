@@ -1,18 +1,17 @@
 import React, { useCallback } from 'react';
-import { StyleSheet, View, Button, Linking, Alert } from 'react-native';
+import { StyleSheet, Button, Alert } from 'react-native';
+import * as WebBrowser from 'expo-web-browser';
 
 const GoogleMapsLink = (props) => {
 
-    const handlePress = useCallback(async () => {
+    function reformatUrl(url) {
+        let splitURL = decodeURIComponent(url).split("&");
+        return "https://www.google.com/maps/dir/?api=1&" + splitURL[1] + "&" + splitURL[2] + "&" + "travel" + splitURL[3];
+    }
 
-        const isSupported = await Linking.canOpenURL(props.url);
-
-        if (isSupported) {
-            await Linking.openURL(props.url)
-        } else {
-            Alert.alert('Cannot open this url');
-        }
-    }, [props.url]);
+    const handlePress = () => {
+        WebBrowser.openBrowserAsync(reformatUrl(props.url));
+    }
 
     return(
         <Button title="Open in GoogleMaps" onPress={handlePress} />
@@ -24,3 +23,5 @@ const styles = StyleSheet.create({
 });
 
 export default GoogleMapsLink;
+
+// https://www.google.com/maps/dir/?api=1&origin=Camden&destination=Deptford&travelmode=transit
