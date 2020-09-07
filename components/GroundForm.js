@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, StyleSheet, Text, TextInput, Button } from 'react-native';
+import { View, StyleSheet, TextInput, Button } from 'react-native';
 import { Formik } from 'formik';
-import AppText from './AppText';
+import AppText from './text/AppText';
 
 const GroundForm = (props) => {
 

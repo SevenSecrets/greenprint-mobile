@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import SmallHeaderText from './SmallHeaderText';
+import { StyleSheet, View } from 'react-native';
+import SmallHeaderText from './text/SmallHeaderText';
 import GroundForm from './GroundForm';
 import JourneyOptions from './JourneyOptions';
 
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     calculator: {
         borderRadius: 4,
         backgroundColor: 'rgb(110,143,103)',
-        width: "75%",
+        width: "80%",
         alignSelf: "center",
         alignItems: "center",
         margin: "auto",

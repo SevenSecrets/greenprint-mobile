@@ -1,5 +1,5 @@
-import React, { useCallback } from 'react';
-import { StyleSheet, Button, Alert } from 'react-native';
+import React from 'react';
+import { StyleSheet, Button } from 'react-native';
 import * as WebBrowser from 'expo-web-browser';
 
 const GoogleMapsLink = (props) => {
@@ -23,5 +23,3 @@ const styles = StyleSheet.create({
 });
 
 export default GoogleMapsLink;
-
-// https://www.google.com/maps/dir/?api=1&origin=Camden&destination=Deptford&travelmode=transit

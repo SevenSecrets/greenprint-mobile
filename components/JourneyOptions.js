@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { StyleSheet, View, FlatList } from 'react-native';
+import React from 'react';
+import { View, FlatList } from 'react-native';
 import ListItem from './ListItem'
 
 const JourneyOptions = (props) => {

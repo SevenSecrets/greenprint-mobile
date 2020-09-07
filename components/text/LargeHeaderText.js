@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 import AppText from './AppText';
-import { create } from 'react-test-renderer';
 
 const LargeHeaderText = (props) => {
     return (
